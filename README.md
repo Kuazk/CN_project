@@ -1,5 +1,6 @@
 # CN_project
 Java TCP Server
+
 This is a simple TCP server implemented in Java that allows clients to connect, perform simple mathematical operations, and terminate the connection.
 
 Prerequisites
@@ -17,13 +18,19 @@ Usage
 Once a client has connected to the server, the client can send one of the following types of requests:
 
 JOIN_REQUEST: The client sends this message to join the server. The message must be in the format JOIN_REQUEST|clientName.
+
 TERMINATION_REQUEST: The client sends this message to terminate the connection with the server. The message must be in the format TERMINATION_REQUEST|clientName.
+
 CALCULATION_REQUEST: The client sends this message to perform a mathematical operation. The message must be in the format CALCULATION_REQUEST|operation|operand1|operand2. Supported operations are ADD, SUB, MUL, and DIV.
+
 The server will respond to each request with an appropriate response message in the following format:
 
 JOIN_ACK: Sent in response to a JOIN_REQUEST message. The message is in the format JOIN_ACK|clientName.
+
 TERMINATION_ACK: Sent in response to a TERMINATION_REQUEST message. The message is in the format TERMINATION_ACK|clientName.
+
 CALCULATION_ACK: Sent in response to a CALCULATION_REQUEST message. The message is in the format CALCULATION_ACK|operation|operand1|operand2|result.
+
 CALCULATION_ERROR: Sent if an invalid operation is specified in a CALCULATION_REQUEST message. The message is in the format CALCULATION_ERROR|operation.
 
 The server also logs each client connection, disconnection, and calculation request to a log file named log.txt. The log file is created in the same directory as the Java files if it does not already exist.
