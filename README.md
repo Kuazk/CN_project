@@ -10,7 +10,7 @@ Prerequisites
 Getting Started
 1. Clone the repository: git clone https://github.com/Kuazk/CN_project.git
 2. Open the project in your IDE or navigate to the project directory in the command line
-3. Compile the Java files: javac TCPServer.java ClientHandler.java
+3. Compile the Java files: javac tcp_server.java tcp_client.java
 4. Run the server: java TCPServer
 
 Connect to the server from a client application using the server's IP address and port number (default port is 6789)
