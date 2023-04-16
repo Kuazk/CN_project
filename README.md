@@ -10,10 +10,11 @@ Prerequisites
 Getting Started
 1. Clone the repository: git clone https://github.com/Kuazk/CN_project.git
 2. Open the project in your IDE or navigate to the project directory in the command line
-3. open make_1client folder
+3. open make_1client folder (1 client, 1 server with user input) or make_3client folder (3 client, 1 server with no user input)
 4. Run make
 5. open seprate terminal window(one for client and one for server)
 6. Run make clients and make server
+7. Run make clean to clean up the code.
 
 Connect to the server from a client application using the server's IP address and port number (default port is 6789)
 
